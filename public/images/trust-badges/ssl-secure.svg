@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <rect width="120" height="40" rx="6" fill="#3B82F6" opacity="0.1"/>
+  <rect width="120" height="40" rx="6" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
+  <text x="60" y="16" font-family="Arial" font-size="8" fill="#3B82F6" text-anchor="middle" font-weight="bold">
+    256-BIT SSL
+  </text>
+  <text x="60" y="30" font-family="Arial" font-size="8" fill="#3B82F6" text-anchor="middle" font-weight="bold">
+    ENCRYPTED
+  </text>
+  <rect x="20" y="14" width="8" height="10" rx="1" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
+  <path d="M24 14 L24 10 A4 4 0 0 1 28 6 A4 4 0 0 1 32 10 L32 14" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
+</svg>

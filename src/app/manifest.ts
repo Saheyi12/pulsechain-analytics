@@ -1,0 +1,20 @@
+import { MetadataRoute } from 'next';
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'PulseChain Analytics',
+    short_name: 'PulseChain',
+    description: 'AI-Powered Crypto Market Intelligence',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#0F172A',
+    theme_color: '#3B82F6',
+    icons: [
+      {
+        src: '/favicon.ico',
+        sizes: '64x64',
+        type: 'image/x-icon',
+      },
+    ],
+  };
+}

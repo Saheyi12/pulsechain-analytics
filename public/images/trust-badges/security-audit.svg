@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <rect width="120" height="40" rx="6" fill="#10B981" opacity="0.1"/>
+  <rect width="120" height="40" rx="6" stroke="#10B981" stroke-width="1.5" fill="none"/>
+  <text x="60" y="16" font-family="Arial" font-size="8" fill="#10B981" text-anchor="middle" font-weight="bold">
+    SECURITY
+  </text>
+  <text x="60" y="30" font-family="Arial" font-size="8" fill="#10B981" text-anchor="middle" font-weight="bold">
+    AUDITED
+  </text>
+  <path d="M20 12 L22 18 L28 12" stroke="#10B981" stroke-width="1.5" fill="none"/>
+</svg>

@@ -1,0 +1,151 @@
+/* ============================================
+   PULSECHAIN ANALYTICS - THEME SYSTEM
+   ============================================ */
+
+/* Dark Theme (Default) */
+.theme-dark,
+.dark {
+  --bg-primary: #0A0E17;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1A2332;
+  --bg-card: #111827;
+  --bg-card-hover: #1A2332;
+  --bg-input: #0F1724;
+  --bg-sidebar: #0D1320;
+  --bg-header: rgba(10, 14, 23, 0.85);
+  
+  --border-primary: rgba(255, 255, 255, 0.08);
+  --border-secondary: rgba(255, 255, 255, 0.06);
+  --border-accent: rgba(59, 130, 246, 0.3);
+  
+  --text-primary: #F9FAFB;
+  --text-secondary: #D1D5DB;
+  --text-tertiary: #9CA3AF;
+  --text-muted: #6B7280;
+  
+  --accent: #3B82F6;
+  --accent-hover: #4B94F6;
+  --accent-muted: rgba(59, 130, 246, 0.15);
+}
+
+/* Light Theme */
+.theme-light,
+.light {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
+  --bg-input: #F1F5F9;
+  --bg-sidebar: #F8FAFC;
+  --bg-header: rgba(255, 255, 255, 0.9);
+  
+  --border-primary: rgba(0, 0, 0, 0.08);
+  --border-secondary: rgba(0, 0, 0, 0.06);
+  --border-accent: rgba(59, 130, 246, 0.3);
+  
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #64748B;
+  --text-muted: #94A3B8;
+  
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-muted: rgba(37, 99, 235, 0.1);
+}
+
+/* Cyberpunk Theme */
+.theme-cyberpunk {
+  --bg-primary: #0A0014;
+  --bg-secondary: #120024;
+  --bg-tertiary: #1A0036;
+  --bg-card: #120024;
+  --bg-card-hover: #1A0036;
+  --bg-input: #0D001A;
+  --bg-sidebar: #0A0014;
+  --bg-header: rgba(10, 0, 20, 0.9);
+  
+  --border-primary: rgba(0, 255, 255, 0.15);
+  --border-secondary: rgba(255, 0, 255, 0.1);
+  --border-accent: rgba(0, 255, 255, 0.4);
+  
+  --text-primary: #E0FFFF;
+  --text-secondary: #B0E0E0;
+  --text-tertiary: #80B0B0;
+  --text-muted: #507070;
+  
+  --accent: #00FFFF;
+  --accent-hover: #40FFFF;
+  --accent-muted: rgba(0, 255, 255, 0.15);
+}
+
+/* Gold/Elite Theme */
+.theme-gold {
+  --bg-primary: #0D0B07;
+  --bg-secondary: #1A1510;
+  --bg-tertiary: #241D15;
+  --bg-card: #1A1510;
+  --bg-card-hover: #241D15;
+  --bg-input: #120F0A;
+  --bg-sidebar: #0D0B07;
+  --bg-header: rgba(13, 11, 7, 0.9);
+  
+  --border-primary: rgba(245, 158, 11, 0.15);
+  --border-secondary: rgba(245, 158, 11, 0.08);
+  --border-accent: rgba(245, 158, 11, 0.4);
+  
+  --text-primary: #FEF3C7;
+  --text-secondary: #FDE68A;
+  --text-tertiary: #D4A95A;
+  --text-muted: #8B7355;
+  
+  --accent: #F59E0B;
+  --accent-hover: #FBBF24;
+  --accent-muted: rgba(245, 158, 11, 0.15);
+}
+
+/* Apply theme variables */
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme-aware components */
+.themed-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.themed-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+}
+
+.themed-input {
+  background: var(--bg-input);
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  transition: all var(--transition-fast);
+}
+
+.themed-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-muted);
+}
+
+.themed-sidebar {
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border-primary);
+}
+
+.themed-header {
+  background: var(--bg-header);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-primary);
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/
+Sitemap: https://pulsechain-analytics.vercel.app/sitemap.xml
