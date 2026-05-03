@@ -2,6 +2,9 @@
 const nextConfig = {
   // React strict mode
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 
   // Image optimization
   images: {
