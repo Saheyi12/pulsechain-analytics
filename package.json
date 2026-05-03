@@ -10,26 +10,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "type-check": "tsc --noEmit",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
-    "db:seed": "tsx prisma/seed.ts",
+    "db:seed": "ts-node prisma/seed.ts",
     "db:studio": "prisma studio",
-    "db:migrate": "prisma migrate dev",
-    "blog:generate": "tsx scripts/generate-blog.ts",
-    "sitemap:update": "tsx scripts/update-sitemap.ts",
-    "market:sync": "tsx scripts/sync-market-data.ts",
-    "market:sync:watch": "tsx scripts/sync-market-data.ts --watch",
-    "images:optimize": "tsx scripts/optimize-images.ts",
-    "seed": "tsx scripts/seed-database.ts",
-    "deploy": "bash scripts/deploy.sh",
-    "deploy:prod": "bash scripts/deploy.sh --prod --seed",
-    "postinstall": "prisma generate",
-    "clean": "rm -rf .next node_modules",
-    "reset": "npm run clean && npm install"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^5.7.0",
@@ -56,5 +41,8 @@
     "tailwindcss": "^3.4.19",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.2"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   }
 }
