@@ -118,7 +118,7 @@ export function TierProgress({ currentTier = 'SILVER', currentRefs = 25 }: { cur
           </div>
           <Progress value={progress} variant="success" size="lg" />
           <p className="text-xs text-gray-400 mt-2">
-            {nextTier.requirement.split('-')[0] - currentRefs} more referrals needed for {nextTier.rate}% commission
+            {parseInt(nextTier.requirement.split('-')[0]) - currentRefs} more referrals needed for {nextTier.rate}% commission
           </p>
         </div>
       )}
